@@ -1,0 +1,12 @@
+CompileFlags:
+  Add: [
+    -std=c++23,
+    -Wall,
+    -Wextra,
+    -Wall,
+    -pedantic,
+    -D__cpp_concepts=202002L,
+    -I,
+    vcpkg_installed/x64-linux/include
+  ]
+  Compiler: g++

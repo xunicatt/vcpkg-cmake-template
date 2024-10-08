@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+set(NAME $ENV{PROJECT})
+project(${NAME} CXX)
+set(CMAKE_CXX_STANDARD 23)
+find_package(fmt CONFIG REQUIRED)
+add_executable(${NAME} main.cpp)
+target_link_libraries(${NAME} PRIVATE fmt::fmt)
